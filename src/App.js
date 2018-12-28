@@ -2,10 +2,9 @@ import React, { Component, Fragment } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import Home from 'pages/Home';
-import YourPage from 'pages/YourPage';
 import NotFound from 'pages/NotFound';
 
-import { root, yourPageRoute } from 'routes/internal';
+import { root } from 'routes/internal';
 
 import './App.css';
 
@@ -22,7 +21,6 @@ class App extends Component {
           <main id="main">
             <Switch>
               <Route path={root} exact component={Home} />
-              <Route path={yourPageRoute} exact component={YourPage} />
               <Route component={NotFound} />
             </Switch>
           </main>
