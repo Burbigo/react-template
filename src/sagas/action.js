@@ -1,6 +1,6 @@
 import { call, put, takeEvery } from 'redux-saga/effects';
 
-import { doSomeAction } from 'api/action';
+import { yourAction } from 'api/action';
 
 import {
   YOUR_ACTION_REQUEST,
@@ -8,9 +8,9 @@ import {
   yourActionFailure,
 } from 'actions/action';
 
-function* doSomethingSaga(action) {
+function* yourActionSaga(action) {
   try {
-    const response = yield call(doSomeAction, action.payload);
+    const response = yield call(yourAction, action.payload);
     yield put(yourActionSuccess(response));
   } catch (e) {
     console.log(YOUR_ACTION_REQUEST, e);
@@ -18,8 +18,8 @@ function* doSomethingSaga(action) {
   }
 }
 
-function* watchRatesSaga() {
-  yield takeEvery(YOUR_ACTION_REQUEST, doSomethingSaga);
+function* watchActionSaga() {
+  yield takeEvery(YOUR_ACTION_REQUEST, yourActionSaga);
 }
 
-export default watchRatesSaga;
+export default watchActionSaga;
