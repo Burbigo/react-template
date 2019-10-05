@@ -3,8 +3,8 @@ import createSagaMiddleware from 'redux-saga';
 import { persistStore, persistReducer } from 'redux-persist';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import storage from 'redux-persist/lib/storage';
-import rootReducer from 'reducers';
-import rootSaga from 'sagas';
+import rootReducer from '../reducers';
+import rootSaga from '../sagas';
 
 const sagaMiddleware = createSagaMiddleware();
 

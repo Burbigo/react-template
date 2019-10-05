@@ -8,7 +8,7 @@ import Grid from '@material-ui/core/Grid';
 import {
   root,
   notFound
-} from 'routes/internal';
+} from '../../routes/internal';
  
 const styles = () => ({
   root: {
@@ -20,7 +20,7 @@ const styles = () => ({
 
 class NotFound extends PureComponent {
 
-  componentWillMount() {
+  componentDidMount() {
     const { history } = this.props;
     history.replace(notFound);    
   }

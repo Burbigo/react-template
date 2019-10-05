@@ -1,12 +1,12 @@
 import { call, put, takeEvery } from 'redux-saga/effects';
 
-import { yourAction } from 'api/action';
+import { yourAction } from '../api/action';
 
 import {
   YOUR_ACTION_REQUEST,
   yourActionSuccess,
   yourActionFailure,
-} from 'actions/action';
+} from '../actions/action';
 
 function* yourActionSaga(action) {
   try {

@@ -2,7 +2,7 @@ import {
   YOUR_ACTION_REQUEST,
   YOUR_ACTION_SUCCESS,
   YOUR_ACTION_FAILURE
-} from 'actions/action';
+} from '../actions/action';
 
 const initialState = {
   isFetching: false,

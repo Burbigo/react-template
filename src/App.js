@@ -1,10 +1,10 @@
 import React, { Component, Fragment } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Home from 'pages/Home';
-import NotFound from 'pages/NotFound';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
 
-import { root } from 'routes/internal';
+import { root } from './routes/internal';
 
 import './App.css';
 
